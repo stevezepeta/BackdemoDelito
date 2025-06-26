@@ -1,8 +1,13 @@
 package prevencion.delito.model;
 
+
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "botones")
 public class Boton {
 
@@ -14,37 +19,10 @@ public class Boton {
     private String colorHex;
     private String ruta;
 
-    // Getters y setters
+    private Double posX;
+    private Double posY;
 
-    public Long getId() {
-        return id;
-    }
+    private String pantalla; // 🔑 Nueva propiedad para indicar la pestaña
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTexto() {
-        return texto;
-    }
-
-    public void setTexto(String texto) {
-        this.texto = texto;
-    }
-
-    public String getColorHex() {
-        return colorHex;
-    }
-
-    public void setColorHex(String colorHex) {
-        this.colorHex = colorHex;
-    }
-
-    public String getRuta() {
-        return ruta;
-    }
-
-    public void setRuta(String ruta) {
-        this.ruta = ruta;
-    }
+    
 }

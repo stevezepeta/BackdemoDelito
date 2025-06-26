@@ -17,4 +17,5 @@ public class TextoDinamico {
 
     private Double posX; // Porcentaje horizontal (0.0 a 1.0)
     private Double posY; // Porcentaje vertical (0.0 a 1.0)
+    private String pantalla; // 👈 "home", "configuracion", etc.
 }
